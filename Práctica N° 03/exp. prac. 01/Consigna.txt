@@ -1,0 +1,12 @@
+ESCENARIO  
+Se desea desarrollar una aplicación de gestión de tareas que permita a los usuarios crear y asignar 
+tareas, establecer fechas límite y hacer seguimiento del progreso de las mismas. La aplicación debe ser 
+escalable y fácil de mantener, por lo que se desea que se implementen los principios SOLID en su diseño.
+
+EXPERIENCIA DE PRÁCTICA N°01: PRINCIPIO DE RESPONSABILIDAD ÚNICA (SRP) 
+    a) Identificar los distintos módulos de la aplicación, definiendo claramente sus responsabilidades y 
+    tareas específicas.  
+    b) Crear clases que se encarguen de una sola responsabilidad y que no tengan más de una razón 
+    para cambiar.  
+    c) Asegurarse de que cada módulo tenga un único propósito y que sus tareas estén claramente 
+    definidas.  
