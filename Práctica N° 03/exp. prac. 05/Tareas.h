@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class TareaBase : public: IMostrable{
+class TareaBase : public IMostrable{
 public:
     string id;
     string nombre;
@@ -31,7 +31,7 @@ public:
         estado=_estado;
     }
     
-    virtual void mostrarInformación() const override = 0;
+    virtual void mostrarInformación() override = 0;
 };
 
 class TareaSimple : public TareaBase{
@@ -50,25 +50,27 @@ public:
 
 class TareaCompuesta : public TareaBase{
 public:
-    vector<TareaBase> subtareas;
+    vector<TareaBase*> subtareas;
 
-    TareaCompuesta(string _id, string _nombre, string _descripcion, string _fechaLimite, string _estado, vector<TareaBase> _subtareas) : TareaBase(_id, _nombre, _descripcion, _fechaLimite, _estado){
+    TareaCompuesta(string _id, string _nombre, string _descripcion, string _fechaLimite, string _estado, vector<TareaBase*> _subtareas) : TareaBase(_id, _nombre, _descripcion, _fechaLimite, _estado){
         subtareas=_subtareas;
     }
 
     void agregarSubtarea(TareaBase* nuevaTarea){
         subtareas.push_back(nuevaTarea);
     }
-    void eliminarSubtarea(strng idTarea){
+    void eliminarSubtarea(string idTarea){
         for ( int i=0; i<subtareas.size(); i++ ){
-            if ( subtareas[i].getId() == idTarea ){
+            if ( subtareas[i]->getId() == idTarea ){
+                delete subtareas[i];
                 subtareas.erase( subtareas.begin() + i );
+                break;
             }
         }
     }
     void cambiarEstado(string nuevoEstado){
         for ( int i=0; i<subtareas.size(); i++ ){
-            subtareas[i].setEstado(nuevoEstado);
+            subtareas[i]->setEstado(nuevoEstado);
         }
     }
     void mostrarInformación() override {
@@ -78,7 +80,7 @@ public:
         cout<<" Estado: "<< estado << endl;
 
         for ( int i=0; i<subtareas.size(); i++ ){
-            subtareas[i].mostrarInformación();
+            subtareas[i]->mostrarInformación();
         }
     }
 };

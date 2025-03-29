@@ -7,14 +7,14 @@ using namespace std;
 
 class IMostrable{
 public:
-    virtual void mostrarInformación() {} = 0;
-    virtual ~IMostrable{};
+    virtual void mostrarInformación()= 0;
+    virtual ~IMostrable();
 };
 
 class IGestionable{
 public:
-    virtual void agregarTarea(){}=0;
-    virtual void eliminarTarea(){}=0;
+    virtual void agregarTarea()=0;
+    virtual void eliminarTarea()=0;
     virtual~IGestionable() {};
 };
 #endif
