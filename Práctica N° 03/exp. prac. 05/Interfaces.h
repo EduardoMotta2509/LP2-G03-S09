@@ -8,7 +8,7 @@ using namespace std;
 class IMostrable{
 public:
     virtual void mostrarInformación()= 0;
-    virtual ~IMostrable();
+    virtual ~IMostrable() = default;
 };
 
 class IGestionable{

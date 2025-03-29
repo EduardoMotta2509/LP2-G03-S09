@@ -39,12 +39,12 @@ public:
     TareaSimple(string _id, string _nombre, string _descripcion, string _fechaLimite, string _estado) : TareaBase(_id, _nombre, _descripcion, _fechaLimite, _estado){}
 
     virtual void mostrarInformación() override {
-        cout<<"·····················································································"<<endl;
-        cout<<"Tarea Simple: "<<endl;
-        cout<<"     Nombre: "<< nombre <<"  ID: "<< id <<" Fecha Límite:  "<< fechaLimite << endl;
-        cout<<"     Descripcion: "<< descripcion << endl;
-        cout<<"     Estado: "<< estado << endl;
-        cout<<"·····················································································"<<endl;
+        cout<<"         ·································································"<<endl;
+        cout<<"         Tarea Simple: "<<endl;
+        cout<<"              Nombre: "<< nombre <<"  ID: "<< id <<" Fecha Límite:  "<< fechaLimite << endl;
+        cout<<"              Descripcion: "<< descripcion << endl;
+        cout<<"              Estado: "<< estado << endl;
+        cout<<"         ·································································"<<endl;
     }
 };
 
@@ -74,10 +74,11 @@ public:
         }
     }
     void mostrarInformación() override {
-        cout<<"Tarea Compuesta: "<<endl;
-        cout<<" Nombre: "<< nombre <<"  ID: "<< id <<" Fecha Límite:  "<< fechaLimite << endl;
-        cout<<" Descripcion: "<< descripcion << endl;
-        cout<<" Estado: "<< estado << endl;
+        cout<<"      TAREA COMPUESTA"<<endl;
+        cout<<"       Nombre: "<< nombre <<"  ID: "<< id <<" Fecha Límite:  "<< fechaLimite << endl;
+        cout<<"       Descripcion: "<< descripcion << endl;
+        cout<<"       Estado: "<< estado << endl;
+        cout<<"      CONTIENE-->"<<endl;
 
         for ( int i=0; i<subtareas.size(); i++ ){
             subtareas[i]->mostrarInformación();

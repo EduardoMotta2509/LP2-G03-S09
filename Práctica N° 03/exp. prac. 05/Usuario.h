@@ -30,7 +30,6 @@ public:
     void desasignarTarea(string idTarea){
         for ( int i=0; i<tareasAsignadas.size(); i++ ){
             if ( tareasAsignadas[i]->getId() == idTarea ){
-                delete tareasAsignadas[i];
                 tareasAsignadas.erase( tareasAsignadas.begin() + i );
                 break;
             }
@@ -39,7 +38,7 @@ public:
 
     void mostrarInformación() override {
         cout<<" Nombre: "<< nombre <<" ID: "<< id <<endl;
-        cout<<"Tareas asignadas: "<<endl;
+        cout<<"························· TAREAS ASIGNADAS························· "<<endl;
         for ( int i=0; i<tareasAsignadas.size(); i++ ){
             tareasAsignadas[i]->mostrarInformación();
         }

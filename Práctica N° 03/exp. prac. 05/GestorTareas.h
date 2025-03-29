@@ -30,10 +30,11 @@ public:
     void eliminarTarea(string idTarea){
         for ( int i=0; i<tareas.size(); i++ ){
             if ( tareas[i]->getId() == idTarea ){
+                delete tarea;
                 tareas.erase( tareas.begin() + i );
             }
         }
-        
+        tareas.erase(it, tareas.end());
     }
 
     bool buscarUsuarioXID(string idUsuario){
@@ -77,6 +78,11 @@ public:
             tareas[i]->mostrarInformación();
         }
     }
-
+    
+    ~GestorTareas() {
+    for (int i = 0; i < tareas.size(); i++) {
+        delete tareas[i];
+    }
+}
 };
 #endif
