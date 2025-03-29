@@ -1,0 +1,13 @@
+ESCENARIO  
+    Se desea desarrollar una aplicación de gestión de tareas que permita a los usuarios crear y asignar 
+    tareas, establecer fechas límite y hacer seguimiento del progreso de las mismas. La aplicación debe ser 
+    escalable y fácil de mantener, por lo que se desea que se implementen los principios SOLID en su diseño.    
+
+    EXPERIENCIA DE PRÁCTICA N°05: PRINCIPIO DE INVERSIÓN DE DEPENDENCIA 
+    (DIP):  
+        a) Asegurarse de que las dependencias de alto nivel no dependan de las dependencias de bajo 
+        nivel.  
+        b) Utilizar interfaces para que los módulos de alto nivel no dependan directamente de los módulos 
+        de bajo nivel.  
+        c) Asegurarse de que los cambios en una dependencia de bajo nivel no afecten a los módulos de 
+        alto nivel.  

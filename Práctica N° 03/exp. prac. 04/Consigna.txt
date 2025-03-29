@@ -1,0 +1,12 @@
+ESCENARIO  
+    Se desea desarrollar una aplicación de gestión de tareas que permita a los usuarios crear y asignar 
+    tareas, establecer fechas límite y hacer seguimiento del progreso de las mismas. La aplicación debe ser 
+    escalable y fácil de mantener, por lo que se desea que se implementen los principios SOLID en su diseño.    
+
+    EXPERIENCIA DE PRÁCTICA N°04: PRINCIPIO DE SEGREGACIÓN DE INTERFACES 
+    (ISP):  
+        a) Definir interfaces específicas para cada módulo de la aplicación, evitando interfaces genéricas o 
+        sobrecargadas.  
+        b) Evitar que una clase tenga que implementar métodos que no necesita.  
+        c) Asegurarse de que cada módulo de la aplicación tenga interfaces que sean coherentes con sus 
+        responsabilidades.

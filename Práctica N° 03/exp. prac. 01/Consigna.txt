@@ -9,4 +9,18 @@ EXPERIENCIA DE PRÁCTICA N°01: PRINCIPIO DE RESPONSABILIDAD ÚNICA (SRP)
     b) Crear clases que se encarguen de una sola responsabilidad y que no tengan más de una razón 
     para cambiar.  
     c) Asegurarse de que cada módulo tenga un único propósito y que sus tareas estén claramente 
-    definidas.  
+    definidas.
+
+1.  Principio de Responsabilidad Única (SRP)
+        Clases y responsabilidades:
+            Tarea: Representa una tarea con atributos como título, descripción, fecha límite, estado, etc.
+            GestorTareas: Maneja la creación, edición y eliminación de tareas.
+            Usuario: Representa a un usuario con sus datos.
+            AsignadorTareas: Se encarga de asignar tareas a usuarios.
+            Notificador: Envía notificaciones sobre el estado de las tareas
+
+2. Principio Abierto/Cerrado (OCP)
+        Interfaces: Definimos una interfaz ITarea para permitir la expansión de tipos de tareas sin alterar las existentes:
+            Ahora podemos crear subclases como TareaRegular o TareaUrgente sin modificar el código base:
+
+3. Principio de Sustitución de Liskov (LSP)

@@ -1,0 +1,10 @@
+ESCENARIO  
+    Se desea desarrollar una aplicación de gestión de tareas que permita a los usuarios crear y asignar 
+    tareas, establecer fechas límite y hacer seguimiento del progreso de las mismas. La aplicación debe ser 
+    escalable y fácil de mantener, por lo que se desea que se implementen los principios SOLID en su diseño.
+
+    EXPERIENCIA DE PRÁCTICA N°02: PRINCIPIO ABIERTO/CERRADO (OCP):  
+        a) Definir las interfaces de los módulos de la aplicación y evitar la modificación de su código original.  
+        b) Utilizar la herencia y la composición para extender la funcionalidad de los módulos sin necesidad 
+        de modificar su código original.  
+        c) Asegurarse de que los cambios en una clase no afecten a otras clases ya existentes.  

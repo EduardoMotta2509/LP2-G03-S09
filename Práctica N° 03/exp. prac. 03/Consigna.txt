@@ -1,0 +1,12 @@
+ESCENARIO  
+    Se desea desarrollar una aplicación de gestión de tareas que permita a los usuarios crear y asignar 
+    tareas, establecer fechas límite y hacer seguimiento del progreso de las mismas. La aplicación debe ser 
+    escalable y fácil de mantener, por lo que se desea que se implementen los principios SOLID en su diseño.    
+    
+    EXPERIENCIA DE PRÁCTICA N°03: PRINCIPIO DE SUSTITUCIÓN DE LISKOV (LSP):  
+        a) Asegurarse de que las subclases sean intercambiables con las clases padre sin afectar el 
+        comportamiento de la aplicación.  
+        b) Evitar añadir comportamientos adicionales a las subclases que no estén presentes en las clases 
+        padre.  
+        c) Asegurarse de que todas las subclases cumplan con los contratos establecidos por sus clases 
+        padre.

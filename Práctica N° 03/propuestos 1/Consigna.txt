@@ -1,0 +1,42 @@
+1.  Después de haber completado el proyecto de la aplicación de gestión de tareas basada en los 
+    principios SOLID, se desea implementar nuevos módulos que permitan a los usuarios crear y 
+    gestionar proyectos, agregar comentarios y compartir archivos. Se deberán seguir las 
+    mismas especificaciones y características de SOLID en el diseño de estos nuevos módulos.
+
+        a) Principio de Responsabilidad Única (SRP):  
+            • Identificar los nuevos módulos necesarios para la implementación de proyectos, 
+            comentarios y archivos.  
+            • Definir claramente las responsabilidades y tareas específicas de cada uno de los 
+            nuevos módulos.  
+            • Crear clases que se encarguen de una sola responsabilidad y que no tengan más de 
+            una razón para cambiar.
+
+        b) Principio Abierto/Cerrado (OCP):  
+            • Definir las interfaces de los nuevos módulos y evitar la modificación de su código 
+            original.  
+            • Utilizar la herencia y la composición para extender la funcionalidad de los módulos sin 
+            necesidad de modificar su código original.
+            • Asegurarse de que los cambios en una clase no afecten a otras clases ya existentes. 
+
+        c) Principio de Sustitución de Liskov (LSP):  
+            • Asegurarse de que las subclases sean intercambiables con las clases padre sin 
+            afectar el comportamiento de la aplicación.  
+            • Evitar añadir comportamientos adicionales a las subclases que no estén presentes en 
+            las clases padre.  
+            • Asegurarse de que todas las subclases cumplan con los contratos establecidos por 
+            sus clases padre.  
+
+        d) Principio de Segregación de Interfaces (ISP):  
+            • Definir interfaces específicas para cada nuevo módulo de la aplicación, evitando 
+            interfaces genéricas o sobrecargadas.  
+            • Evitar que una clase tenga que implementar métodos que no necesita.  
+            • Asegurarse de que cada nuevo módulo de la aplicación tenga interfaces que sean 
+            coherentes con sus responsabilidades.  
+            
+        e) Principio de Inversión de Dependencia (DIP):  
+            • Asegurarse de que las dependencias de alto nivel no dependan de las dependencias 
+            de bajo nivel.  
+            • Utilizar interfaces para que los módulos de alto nivel no dependan directamente de los 
+            módulos de bajo nivel.  
+            • Asegurarse de que los cambios en una dependencia de bajo nivel no afecten a los 
+            módulos de alto nivel. 
