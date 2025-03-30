@@ -6,15 +6,15 @@ using namespace std;
 
 int main() {
     // Crear algunas tareas simples
-    TareaSimple tarea1("1", "Configurar servidor", "Pendiente", "Alta", "2025-04-01");
-    TareaSimple tarea2("2", "Diseñar interfaz", "En progreso", "Media", "2025-04-05");
+    TareaSimple tarea1("1", "Configurar servidor",  "Alta", "2025-04-01", "Pendiente");
+    TareaSimple tarea2("2", "Diseñar interfaz", "Media", "2025-04-05", "En progreso");
     
     // Crear una tarea compuesta
     vector<TareaBase*> subtareas;
-    subtareas.push_back(new TareaSimple("3", "Configurar base de datos", "Pendiente", "Alta", "2025-04-02"));
-    subtareas.push_back(new TareaSimple("4", "Definir API", "Pendiente", "Alta", "2025-04-03"));
+    subtareas.push_back(new TareaSimple("3", "Configurar base de datos", "Alta", "2025-04-02", "Pendiente"));
+    subtareas.push_back(new TareaSimple("4", "Definir API", "Alta", "2025-04-03", "Pendiente"));
     
-    TareaCompuesta tareaCompuesta("5", "Desarrollo backend", "Pendiente", "Alta", "2025-04-10", subtareas);
+    TareaCompuesta tareaCompuesta("5", "Desarrollo backend", "Alta", "2025-04-10", "Pendiente", subtareas);
     
     // Crear usuario y asignar tareas
     Usuario usuario("U1", "Eduardo", {});
