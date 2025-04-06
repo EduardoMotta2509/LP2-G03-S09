@@ -10,7 +10,7 @@ class Trabajador {
 protected:
     string nombre;
     int id;
-    vector<Trabajador*> companeros; // Asociación reflexiva
+    vector<Trabajador*> companeros;
 
 public:
     Trabajador(string n, int i) : nombre(n), id(i) {}
