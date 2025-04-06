@@ -10,7 +10,7 @@ class RepositorioLibros{
 private:
     vector<Libro*> libros;
 public:
-    RepositorioLibros(vector<Libro> _libros) : libros(_libros) {}
+    RepositorioLibros(vector<Libro*> _libros) : libros(_libros) {}
 
     bool buscarXisbn(string isbn){
         for (int i=0; i<libros.size(); i++) {

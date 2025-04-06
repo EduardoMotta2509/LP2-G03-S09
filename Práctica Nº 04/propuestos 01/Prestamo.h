@@ -5,6 +5,8 @@
 #include <vector>
 #include "Libro.h"
 #include "Usuario.h"
+#include "RepositorioUsuarios.h"
+#include "RepositorioLibros.h"
 using namespace std;
 
 class Prestamo{
@@ -14,15 +16,15 @@ private:
     Libro* libroPrestado;
     Usuario* usuarioPrestando;
     RepositorioLibros* repoL;
-    RepositorioUsuarios repoU;
+    RepositorioUsuarios* repoU;
 public:
     Prestamo(string _fechaPrestamo, string _fechaDevolucion, Libro* _libroPrestado, Usuario* _usuarioPrestando, RepositorioLibros* _repoL, RepositorioUsuarios* _repoU) : fechaPrestamo(_fechaPrestamo), fechaDevolucion(_fechaDevolucion), libroPrestado(_libroPrestado), usuarioPrestando(_usuarioPrestando),  repoL(_repoL), repoU(_repoU) {}
 
     void realizarPrestamo(int cant){
         if (repoU->buscarXnombre(usuarioPrestando->getNombre()) && repoL->buscarXisbn(libroPrestado->getISBN())) {
-            cout<<"Libro: "<<libroPrestado->getTitulo()<<" prestado a usuario: "<<usuarioPrestando->getNombre()<<endl;
+            cout<<"Libro --> "<<libroPrestado->getTitulo()<<"\nPRESTADO A ---> "<<usuarioPrestando->getNombre()<<endl;
             libroPrestado->reducirCantEjemplares(cant);
-            usuarioPrestando->añadirLibroPrestado(libroPrestado);
+            usuarioPrestando->añadirLibroPrestado(*libroPrestado);
         }
         else {
             cout << "Error al realizar el préstamo. Verifica que el libro y el usuario existan." << endl;

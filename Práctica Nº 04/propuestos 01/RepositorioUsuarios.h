@@ -10,7 +10,7 @@ class RepositorioUsuarios {
 private:
     vector<Usuario*> usuarios;
 public:
-    RepositorioUsuarios(vector<Usuario> _usuarios) : usuarios(_usuarios) {}
+    RepositorioUsuarios(vector<Usuario*> _usuarios) : usuarios(_usuarios) {}
 
     bool buscarXnombre(string nombre){
         for (int i=0; i<usuarios.size(); i++) {
@@ -23,7 +23,7 @@ public:
     }
 
     void registrarUsuario(Usuario* nuevoUsuario){
-        usuarios->push_back(nuevoUsuario);
+        usuarios.push_back(nuevoUsuario);
     }
 };
 #endif

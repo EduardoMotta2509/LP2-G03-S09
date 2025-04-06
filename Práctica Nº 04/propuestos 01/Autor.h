@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include <vector>
-#include "Libro.h"
 using namespace std;
+
+class Libro;
 
 class Autor{
 public:
