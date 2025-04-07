@@ -25,7 +25,16 @@ public:
         }
         return false;
     }
-
+    
+    void mostrarPagantes(){
+        cout<<"----------PAGANTES----------"<<endl;
+        for (int i=0; i<pagantes.size(); i++){
+            cout<<"NOMBRE DEL PAGANTE: "<<pagantes[i].getNombreCliente()<<endl;
+            cout<<"PAGOS TOTALES: "<<pagantes[i].getPagosTotales()<<endl;
+        }
+        cout<<"----------------------------"<<endl;
+    }
+    
 };
 #endif
 

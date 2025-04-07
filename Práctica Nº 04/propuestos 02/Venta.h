@@ -26,7 +26,19 @@ public:
     }
 
     float getTotal() {return total; }
-
+    
+    void mostrarVenta(){
+        cout<<"VENTA NRO: "<<nroFactura<<endl;
+        cout<<"FECHA: "<<fecha<<endl;
+        cout<<"Cliente: "<<cliente->getNombre()<<endl;
+        cout<<"Lista de Productos: "<<endl;
+        for (int i=0; i<listaProdVendidos.size(); i++ ){
+            cout<<"\n";
+            listaProdVendidos[i].mostrarProducto();
+            cout<<"     Cantidad: "<<listaCantXProd[i]<<endl;
+        }
+        cout<<"     TOTAL: "<<total<<"\n"<<endl;
+    }
 };
 #endif
 
