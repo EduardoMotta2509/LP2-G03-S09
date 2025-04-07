@@ -88,6 +88,9 @@ int main() {
 	cout << endl;
 	registro.buscarXnombre("Ana López");
 	registro.buscarXnombre("Pedro García"); // No existe
+	
+	char hola;
+    cin>>hola;
 
 	return 0;
 }
