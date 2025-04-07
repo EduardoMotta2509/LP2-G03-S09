@@ -21,11 +21,11 @@ public:
     }
 
     void infoEstudiante(){
-        cout<<"Nombre: "<<nomre<<" nro de Matrícula: "<<nroMatricula<<endl;
+        cout<<"Nombre: "<<nombre<<" nro de Matrícula: "<<nroMatricula<<endl;
         cout<<"Dirección: "<<direccion<<endl;
         cout<<"Asignaturas que el estudiante lleva: "<<endl;
         for (int i=0; i<asignaturas.size(); i++){
-            cout<<" -"<<asignaturas[i].getNombre();
+            cout<<" -"<<asignaturas[i].getNombre()<<endl;
         }
     }
 

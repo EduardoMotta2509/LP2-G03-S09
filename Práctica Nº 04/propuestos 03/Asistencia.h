@@ -19,6 +19,7 @@ public:
         for (int i=0; i<asignatura.size(); i++){
             if (asignatura[i].getCodigo() == codigoCurso){
                 cout<<"Curso -> "<<asignatura[i].getNombre()<<" con código: "<<asignatura[i].getCodigo()<<" ENCONTRADO"<<endl;
+                cout<<"Registrando Asistencia..."<<endl;
                 reporteAsistencias[i] = asistenciaCurso;
             }
         }
@@ -26,6 +27,7 @@ public:
 
     void imprimirAsistenciaCurso(string codigoCurso){
         vector<Asignatura> asignatura = estudiante->getAsignaturas();
+        cout<<"Imprimir Asistencia del Curso"<<endl;
         for (int i=0; i<asignatura.size(); i++){
             if (asignatura[i].getCodigo() == codigoCurso){
                 cout<<"Curso -> "<<asignatura[i].getNombre()<<" con código: "<<asignatura[i].getCodigo()<<" ENCONTRADO"<<endl;
@@ -38,10 +40,11 @@ public:
 
     void imprimirReporteGeneral(){
         vector<Asignatura> asignatura = estudiante->getAsignaturas();
+        cout<<"\nImprimir Asistencia General"<<endl;
         for (int i=0; i<reporteAsistencias.size(); i++){
             cout<<"Curso -> "<<asignatura[i].getNombre()<<" código: "<<asignatura[i].getCodigo()<<endl;
             for (int j=0; j<reporteAsistencias[i].size(); j++){
-                cout<<"Asistencia marcada como: "<<reporteAsistencias[i][j]<<endl;
+                cout<<"     Asistencia marcada como: "<<reporteAsistencias[i][j]<<endl;
             }
         }
     }

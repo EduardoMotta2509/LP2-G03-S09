@@ -17,11 +17,11 @@ public:
     RendimientoEstudiante(Estudiante* _estudiante, Notas* _consolidadoNotas, Asistencia* _consolidadoAsistencia) : estudiante(_estudiante), consolidadoNotas(_consolidadoNotas), consolidadoAsistencia(_consolidadoAsistencia) {}
 
     void imprimirConsolidadoRendimiento(){
-        cout<<"---------CONSOLIDADO RENDIMIENTO DEL ESTUDIANTE---------"<<endl;
-        cout<<estudiante->infoEstudiante();
-        cout<<"               ---CONSOLIDADO DE NOTAS---               "<<endl;
+        cout<<"\n"<<"---------CONSOLIDADO RENDIMIENTO DEL ESTUDIANTE---------"<<endl;
+        estudiante->infoEstudiante();
+        cout<<"\n"<<"               ---CONSOLIDADO DE NOTAS---               "<<endl;
         consolidadoNotas->mostrarNotas();
-        cout<<"               ---RECORD DE ASISTENCIAS---              "<<endl;
+        cout<<"\n"<<"               ---RECORD DE ASISTENCIAS---              "<<endl;
         consolidadoAsistencia->imprimirReporteGeneral();
     }
 };

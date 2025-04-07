@@ -31,7 +31,7 @@ public:
     void mostrarNotas(){
         vector<Asignatura> curso = estudiante->getAsignaturas();
         for(int i=0; i<notas.size(); i++){
-            cout<<"         ASIGNATURA: "<<curso[i]<<" Nota: "<<notas[i]<<endl;
+            cout<<"         ASIGNATURA: "<<curso[i].getNombre()<<" Nota: "<<notas[i]<<endl;
         }
     }
 };

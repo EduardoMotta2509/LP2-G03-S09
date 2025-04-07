@@ -12,7 +12,7 @@ private:
 public:
     RegistroEstudiantes(vector<RendimientoEstudiante> _Registro) : Registro(_Registro) {}
 
-    void agregarRendimientoEstudiantil(vector<RendimientoEstudiante> NuevoRendimientoEstudiantil){
+    void agregarRendimientoEstudiantil(RendimientoEstudiante NuevoRendimientoEstudiantil){
         Registro.push_back(NuevoRendimientoEstudiantil);
     }
 

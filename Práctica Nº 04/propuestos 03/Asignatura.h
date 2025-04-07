@@ -11,12 +11,13 @@ private:
     string codigo;
     string nombre;
     string descripcion;
-    Profesor docenteImpartidor;
+    Profesor* docenteImpartidor;
 public:
-    Asignatura(string _codigo, string _nombre, string _descripcion, Profesor _docenteImpartidor) : codigo(_codigo), nombre(_nombre), descripcion(_descripcion), docenteImpartidor(_docenteImpartidor) {}
+    Asignatura(string _codigo, string _nombre, string _descripcion, Profesor* _docenteImpartidor) : codigo(_codigo), nombre(_nombre), descripcion(_descripcion), docenteImpartidor(_docenteImpartidor) {}
 
     string getCodigo(){return codigo;}
-    void cambiarDocente(Profesor nuevoDocente){
+    string getNombre(){return nombre;}
+    void cambiarDocente(Profesor* nuevoDocente){
         docenteImpartidor=nuevoDocente;
     }
 
