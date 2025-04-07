@@ -25,19 +25,6 @@ public:
         }
     }
 
-    void imprimirAsistenciaCurso(string codigoCurso){
-        vector<Asignatura> asignatura = estudiante->getAsignaturas();
-        cout<<"Imprimir Asistencia del Curso"<<endl;
-        for (int i=0; i<asignatura.size(); i++){
-            if (asignatura[i].getCodigo() == codigoCurso){
-                cout<<"Curso -> "<<asignatura[i].getNombre()<<" con código: "<<asignatura[i].getCodigo()<<" ENCONTRADO"<<endl;
-                for (int j=0; j<reporteAsistencias.size(); j++){
-                    cout<<"Asistencia marcada como: "<<reporteAsistencias[i][j]<<endl;
-                }
-            }
-        }
-    }
-
     void imprimirReporteGeneral(){
         vector<Asignatura> asignatura = estudiante->getAsignaturas();
         cout<<"\nImprimir Asistencia General"<<endl;

@@ -9,8 +9,7 @@ using namespace std;
 #include "RendimientoEstudiante.h"
 #include "RegistroEstudiantes.h"
 
-//version 21:56
-
+//version 22:27
 int main() {
     // Crear profesores
     Profesor prof1("Ana Gómez", "Calle Luna 123", "987654321", {});
@@ -46,14 +45,12 @@ int main() {
     vector<string> asistBio = {"Presete", "Ausente", "Presete", "Presete"};
     vector<vector<string>> asistenciaGeneral1 = {asistMat, asistBio};
     Asistencia asistencia1(&est1, asistenciaGeneral1);
-    asistencia1.imprimirAsistenciaCurso("MAT101");
     
         //Estudiante 1 Mirkala
     vector<string> asistMat1 = {"Presete", "Presete", "Presente", "Presete"}; 
     vector<string> asistQuim = {"Presete", "Presente", "Presete", "Presete"};
     vector<vector<string>> asistenciaGeneral2 = {asistMat1, asistQuim};
     Asistencia asistencia2(&est1, asistenciaGeneral2);
-    asistencia2.imprimirAsistenciaCurso("QUI202");
     asistencia2.imprimirReporteGeneral();
     
 
