@@ -5,7 +5,10 @@
 #include <string>
 #include <vector>
 #include <set>
+#include "Usuario.h"
 using namespace std;
+class Hotel;
+
 
 class Administrador : public Usuario {
 public:
@@ -17,7 +20,7 @@ public:
         cout << "Administrador: gestionarDisponibilidad" << endl;
     }
     void verReportesOcupacion(const Hotel& hotel) {
-        cout << "Administrador::verReportesOcupacion" << endl;
+        cout << "Administrador: verReportesOcupacion" << endl;
         cout << "Total de habitaciones: " << endl;
         cout << "Habitaciones ocupadas: " << endl;
         cout << "Habitaciones disponibles: " << endl;

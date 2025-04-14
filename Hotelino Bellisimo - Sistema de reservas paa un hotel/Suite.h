@@ -5,7 +5,6 @@
 #include <string>
 #include <vector>
 #include <set>
-using namespace std;
 
 class Suite : public Habitacion {
 public:

@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <set>
+#include "Habitacion.h"
 using namespace std;
 
 class HabitacionSimple : public Habitacion {
@@ -13,5 +14,6 @@ public:
     double calcularTarifa() override {
         cout << "HabitacionSimple::calcularTarifa" << endl;
         return precio;
+    }
 };
 #endif

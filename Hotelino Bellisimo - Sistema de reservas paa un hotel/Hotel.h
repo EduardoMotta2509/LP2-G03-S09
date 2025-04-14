@@ -1,12 +1,17 @@
 #ifndef HOTEL_H
 #define HOTEL_H
 
+#include "Habitacion.h"
+#include "Reserva.h"
+
+
+
 class Hotel {
 private:
     set<Habitacion*> habitaciones;
     vector<Reserva> reservas;
 public:
-    Hotel();
+    Hotel() {}
     void agregarHabitacion(Habitacion* habitacion) {
         cout << "Hotel: agregarHabitacion" << endl;
     }
@@ -18,7 +23,7 @@ public:
         return nullptr;
     }
     set<Habitacion*> getHabitaciones() {
-        cout << "Hotel::getHabitaciones" << endl;
+        cout << "Hotel: getHabitaciones" << endl;
         return habitaciones;
     }
     void agregarReserva(const Reserva& reserva) {
