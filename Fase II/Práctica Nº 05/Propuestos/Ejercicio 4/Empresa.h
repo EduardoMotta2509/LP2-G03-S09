@@ -1,34 +1,23 @@
-#ifndef PRODUCTO_H
-#define PRODUCTO_H
+#ifndef EMPRESA_H
+#define EMPRESA_H
 
 #include <iostream>
 using namespace std;
 
-class Producto{
+#include "Direccion.h"
+#include "Gerente.h"
+
+class Empresa{
 private:
-    string nombre;
-    float precio;
-    float descuento;
+    Gerente gerente;
+    Direccion direccion;
 public:
-    Producto() : nombre(""), precio(0.0), descuento(0.0) {}
-
-    Producto& setNombre(string n){
-        this->nombre=n;
-        return *this;
-    }
-    Producto& setPrecio(float p){
-        this->precio=p;
-        return *this;
-    }
-    Producto& setDescuento(float d){
-        this->descuento=d;
-        return *this;
+    Empresa(string n, float s, string d, string c, string n):gerente(n, s), direccion(d,c,n){
+        cout<<"Constructor invocado para empresa"<<endl;
     }
 
-    float calcularPrecioFinal(){
-        float precioFinal=precio-(precio*descuento);
-        return precioFinal;
+    ~Empresa(){
+        cout<<"Destructor invocado para empresa" <<endl;
     }
-
 };
 #endif
