@@ -11,7 +11,7 @@ private:
     string numero;
 public:
     Direccion(string d, string c, string n):distrito(d),calle(c),numero(n){
-        cout<<"Constructor invocado para direccion."
+        cout<<"Constructor invocado para direccion."<<endl;
     }
 
     void mostrarDireccion(){

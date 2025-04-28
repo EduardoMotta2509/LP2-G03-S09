@@ -12,7 +12,7 @@ private:
     Gerente gerente;
     Direccion direccion;
 public:
-    Empresa(string n, float s, string d, string c, string n):gerente(n, s), direccion(d,c,n){
+    Empresa(string n, float s, string d, string c, string _n):gerente(n, s), direccion(d,c,_n){
         cout<<"Constructor invocado para empresa"<<endl;
     }
 
