@@ -4,20 +4,21 @@
 #include <iostream>
 using namespace std;
 
-#include "Direccion.h"
 #include "Gerente.h"
+#include "Direccion.h"
 
 class Empresa{
 private:
     Gerente gerente;
     Direccion direccion;
 public:
-    Empresa(string n, float s, string d, string c, string _n):gerente(n, s), direccion(d,c,_n){
-        cout<<"Constructor invocado para empresa"<<endl;
+    Empresa(string nombreG, float salarioG, string d, string c, string n): gerente(nombreG, salarioG), direccion(d,c,n) {
+        cout<<"Constructor invocado para la EMPRESA. " <<endl;
     }
 
     ~Empresa(){
-        cout<<"Destructor invocado para empresa" <<endl;
+        cout<<"Destructor invocado para la EMPRESA. " <<endl;
     }
+
 };
 #endif

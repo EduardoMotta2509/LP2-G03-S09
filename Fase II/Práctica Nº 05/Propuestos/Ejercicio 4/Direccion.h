@@ -11,15 +11,15 @@ private:
     string numero;
 public:
     Direccion(string d, string c, string n):distrito(d),calle(c),numero(n){
-        cout<<"Constructor invocado para direccion."<<endl;
+        cout<<"Constructor invocado para la dirección. " <<endl;
     }
 
     void mostrarDireccion(){
         cout<<"Dirección: "<<distrito<<", "<<calle<<" - "<<numero<<endl;
     }
-
+    
     ~Direccion(){
-        cout<<"Destructor invocado para direccion." <<endl;
+        cout<<"Destructor invocado para la dirección. " <<endl;
     }
 
 };
