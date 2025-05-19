@@ -1,0 +1,21 @@
+#ifndef TRIANGULO_H
+#define TRIANGULO_H
+
+#include "Figura.h"
+
+class Triangulo : public Figura {
+private:
+    double base, altura;
+public:
+    Triangulo(double b, double h) : base(b), altura(h) {}
+
+    void dibujar() const override {
+        cout << "Dibujando un triangulo de base " << base << " y altura " << altura << endl;
+    }
+
+    double calcularArea() const override {
+        return (base * altura) / 2;
+    }
+};
+
+#endif

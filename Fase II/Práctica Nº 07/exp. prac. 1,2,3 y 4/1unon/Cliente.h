@@ -26,5 +26,4 @@ public:
         cout << "Saldo: " << saldo << " soles" << endl;
     }
 };
-
 #endif

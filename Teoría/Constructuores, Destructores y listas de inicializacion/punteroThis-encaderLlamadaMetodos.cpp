@@ -35,3 +35,24 @@ int main() {
 
     return 0;
 }
+
+
+
+
+class Animal { ... };
+
+class Perro : public Animal { };
+
+
+class Animal {
+protected:
+    string nombre;
+};
+
+class Perro : public Animal {
+public:
+    void asignarNombre(string n) {
+        nombre = n;  // Acceso permitido
+    }
+};
+
