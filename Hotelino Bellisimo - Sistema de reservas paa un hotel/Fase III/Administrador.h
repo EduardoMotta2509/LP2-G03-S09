@@ -21,7 +21,6 @@ public:
         hotelManager = manager;
     }
     
-    // Función 1: Crear nueva habitación
     void funcionAdmin1(){
         cout << "\n=== CREAR NUEVA HABITACIÓN ===" << endl;
         if (!hotelManager) {
@@ -51,7 +50,7 @@ public:
         hotelManager->crearHabitacion(tipo, codigo, tarifa);
     }
     
-    // Función 2: Actualizar tarifa de habitación
+    
     void funcionAdmin2(){
         cout << "\n=== ACTUALIZAR TARIFA ===" << endl;
         if (!hotelManager) {
@@ -79,7 +78,7 @@ public:
         hotelManager->actualizarTarifa(codigo, nuevaTarifa);
     }
     
-    // Función 3: Bloquear/Desbloquear habitación
+    
     void funcionAdmin3(){
         cout << "\n=== GESTIÓN DE BLOQUEO ===" << endl;
         if (!hotelManager) {
@@ -120,7 +119,7 @@ public:
         }
     }
     
-    // Función 4: Buscar habitaciones por código
+    
     void funcionAdmin4(){
         cout << "\n=== BUSCAR POR CÓDIGO ===" << endl;
         if (!hotelManager) {
@@ -139,7 +138,7 @@ public:
         hotelManager->buscarPorCodigo(codigo);
     }
     
-    // Función 5: Buscar habitaciones por tipo
+    
     void funcionAdmin5(){
         cout << "\n=== BUSCAR POR TIPO ===" << endl;
         if (!hotelManager) {
@@ -151,7 +150,7 @@ public:
         hotelManager->buscarPorTipo(tipo);
     }
     
-    // Función 6: Buscar habitaciones por rango de precio
+    
     void funcionAdmin6(){
         cout << "\n=== BUSCAR POR PRECIO ===" << endl;
         if (!hotelManager) {
@@ -178,7 +177,7 @@ public:
         hotelManager->buscarPorRangoPrecio(minimo, maximo);
     }
     
-    // Función 7: Cancelar reserva (administrador)
+    
     void funcionAdmin7(){
         cout << "\n=== CANCELAR RESERVA ===" << endl;
         if (!hotelManager) {
@@ -202,7 +201,7 @@ public:
         hotelManager->cancelarReserva(idReserva, userHuesped);
     }
     
-    // Función 8: Generar reporte de ocupación
+    
     void funcionAdmin8(){
         cout << "\n=== REPORTE DE OCUPACIÓN ===" << endl;
         if (!hotelManager) {
@@ -213,7 +212,7 @@ public:
         hotelManager->generarReporteOcupacion();
     }
     
-    // Función 9: Generar reporte de ingresos
+    
     void funcionAdmin9(){
         cout << "\n=== REPORTE DE INGRESOS ===" << endl;
         if (!hotelManager) {
@@ -224,7 +223,7 @@ public:
         hotelManager->generarReporteIngresos();
     }
     
-    // Función 10: Listar todas las habitaciones y reservas
+    
     void funcionAdmin10(){
         cout << "\n=== LISTADOS COMPLETOS ===" << endl;
         if (!hotelManager) {
@@ -251,7 +250,7 @@ public:
     }
 };
 
-// Inicializar el puntero estático
+
 HotelManager* Administrador::hotelManager = nullptr;
 
 #endif
