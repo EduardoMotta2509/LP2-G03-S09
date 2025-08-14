@@ -7,7 +7,7 @@ using namespace std;
 class Animal{ 
     public: 
     void hacerSonido(){ 
-        cout<<"Sonido de un animal"<<endl; 
+        cout<<"Sonido de un animalllll"<<endl; 
     } 
 }; 
 #endif 
